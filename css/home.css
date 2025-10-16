@@ -847,7 +847,6 @@ li {
     flex-direction: column; /* biar vertikal */
     justify-content: flex-start;
     align-items: flex-start;
-    outline: 1px solid red;
   }
   .footer-container {
     width: 100%;
