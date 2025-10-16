@@ -1,0 +1,432 @@
+@import url("./global.css");
+
+body {
+  background-image: url("../images/bg_teater.jpg"); /* Relative path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 16px;
+  width: 529px;
+  height: 663px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: rgba(24, 26, 28, 0.84);
+  gap: 37px;
+}
+
+.logo {
+  width: 163px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.header-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+.header-login h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0.2px;
+}
+.header-login p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 37px;
+}
+
+.input-login {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 449px;
+  height: 81px;
+  align-items: stretch;
+}
+.label-login {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+.username {
+  border-radius: 24px;
+  padding: 14px 20px;
+  width: 449px;
+  height: 50px;
+  border: 1px solid #e7e3fc3b;
+  background-color: rgba(24, 26, 28, 0.84);
+  background: transparent;
+  color: white;
+}
+
+input::placeholder {
+  color: #c1c2c4;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.input-password {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 449px;
+  align-items: stretch;
+}
+
+.password-field {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  width: 449px;
+  height: 78px;
+  gap: 6px;
+}
+
+.label-password {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: white;
+  gap: 10px;
+}
+
+.password {
+  border-radius: 24px;
+  padding: 14px 20px;
+  width: 449px;
+  height: 47px;
+  border: 1px solid #e7e3fc3b;
+  background-color: rgba(24, 26, 28, 0.84);
+  background: transparent;
+  color: white;
+}
+
+.password-input-group {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.forgot-password-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 449px;
+  height: 22px;
+  /* ?? */
+  /* gap: 141px;  */
+}
+.register-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #c1c2c4;
+  text-decoration: none;
+}
+.register-link a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: white;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.forgot-password {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: white;
+  text-decoration: none;
+}
+
+.submit-group {
+  width: 449px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit {
+  width: 449px;
+  height: 50px;
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  background-color: rgba(61, 65, 66, 1);
+  border-radius: 24px;
+  padding: 14px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-group p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: rgba(157, 158, 161, 1);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 449px;
+  height: 47px;
+  background-color: rgba(231, 227, 252, 0.23);
+  background: transparent;
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  border-radius: 24px;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+.button-group p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("../images/bg_teater.jpg"); /* Mobile background image */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 306px;
+    height: 384px;
+    border-radius: 8px;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .logo img {
+    width: 94px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 2.3px;
+  }
+
+  .header-login h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  .header-login p {
+    font-size: 10px;
+  }
+
+  .form-login {
+    gap: 20px;
+  }
+
+  .input-login {
+    width: 258px;
+    height: 45.47px;
+    gap: 3.47px;
+  }
+  .label-login {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .username {
+    width: 260px;
+    height: 28px;
+    border-radius: 12px;
+    border: 0.58px solid rgba(231, 227, 252, 0.23);
+    padding: 8.09px 11.55px;
+  }
+
+  input::placeholder {
+    color: rgba(193, 194, 196, 1);
+    font-size: 9.24px;
+    letter-spacing: 0.12px;
+  }
+  .input-password {
+    width: 258px;
+    height: 66.4px;
+    gap: 6.93px;
+  }
+
+  .password-field {
+    width: 258px;
+    height: 66.4px;
+    gap: 3px;
+  }
+
+  .label-password {
+    font-size: 10px;
+    text-align: center;
+  }
+  .password-input-group {
+    width: 260px;
+    height: 28px;
+  }
+
+  .password {
+    width: 260px;
+    height: 28px;
+    border-radius: 12px;
+    border: 0.58px solid rgba(231, 227, 252, 0.23);
+    padding: 8.09px 11.55px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .eye-icon {
+    width: 12px;
+    height: 12px;
+    right: 10px;
+  }
+
+  .forgot-password-group {
+    width: 258px;
+    height: 14px;
+  }
+  .register-link {
+    font-size: 10px;
+  }
+  .register-link a {
+    font-size: 10px;
+  }
+  .forgot-password {
+    font-size: 10px;
+  }
+
+  .submit-group {
+    width: 258px;
+    height: 79.33px;
+    gap: 4px;
+  }
+
+  .submit {
+    width: 258px;
+    height: 30.17px;
+    border-radius: 13.86px;
+    border: 0.58px solid rgba(231, 227, 252, 0.23);
+    padding: 8.09px 11.55px;
+    font-size: 10px;
+  }
+
+  .submit-group p {
+    font-size: 10px;
+  }
+
+  .button-group {
+    width: 258px;
+    height: 27.15px;
+    border-radius: 13.86px;
+    border: 0.58px solid rgba(231, 227, 252, 0.23);
+    padding: 8.09px 11.55px;
+    gap: 11;
+  }
+
+  .button-group img {
+    width: 10px;
+    height: 10px;
+  }
+  .button-group p {
+    font-size: 10px;
+  }
+}

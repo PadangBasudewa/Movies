@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="logo">
+          <img src="./images/Logo.png" alt="" />
+        </div>
+        <div class="header-login">
+          <h3>Masuk</h3>
+          <p>Selamat datang kembali!</p>
+        </div>
+        <form action="" class="form-login">
+          <div class="input-login">
+            <label for="username" class="label-login">Username</label>
+            <input
+              type="text"
+              id="username"
+              class="username"
+              name="username"
+              placeholder="Masukkan username"
+              required
+            />
+          </div>
+          <div class="input-password">
+            <div class="password-field">
+              <label for="password" class="label-password">Kata Sandi</label>
+              <div class="password-input-group">
+                <input
+                  type="text"
+                  id="password"
+                  class="password"
+                  name="password"
+                  placeholder="Masukkan kata sandi"
+                  required
+                />
+                <img
+                  src="./images/eye-off.png"
+                  alt="eye-off"
+                  class="eye-icon"
+                />
+              </div>
+            </div>
+            <div class="forgot-password-group">
+              <p class="register-link">
+                Belum punya akun?
+                <a href="./register.html">&nbsp; Daftar</a>
+              </p>
+              <p class="forgot-password">Lupa Kata sandi?</p>
+            </div>
+          </div>
+          <div class="submit-group">
+            <button class="submit"><a href="./index.html">Masuk</a></button>
+            <p>Atau</p>
+            <button class="button-group">
+              <img src="./images/icon-google.png" alt="" />
+              <p>Masuk dengan Google</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
